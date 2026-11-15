@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <span class="blip" aria-hidden="true"></span>
+    <div>
+      <h1>Token Radar</h1>
+      <p class="tagline">Protocols that record no token yet, ranked by what a token would be worth if their record stayed as it is — and how to farm each one before it launches.</p>
+    </div>
+  </div>
+  <div class="stats" id="stats" aria-label="Snapshot statistics"></div>
+</header>
+<nav class="tabs" aria-label="Views">
+  <a href="#/" data-tab="board">The board</a>
+  <a href="#/live" data-tab="live">Already trading</a>
+</nav>
+<main id="view" aria-busy="true"></main>
+<footer class="foot">
+  <p>An implied value is this radar's own claim, computed from the snapshot's figures by the model stated above — never a prediction that a token will be issued, and never a figure the protocol or make.fun has published. “Records no token” describes the snapshot's record, not the world: a protocol may have a token its record does not carry.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
